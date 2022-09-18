@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: solid 1px rgb(225, 225, 225);
+  height: 75px;
+}
+header .logo {
+  width: 100%;
+}
+header .services {
+  width: 100%;
+}
+header .services a.headertext {
+  transition: 0.3s;
+  position: relative;
+}
+header .services a.headertext:after {
+  content: "";
+  position: absolute;
+  background-color: #f20089;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -25px;
+  transition: 0.3s;
+}
+header .services a.headertext:hover {
+  color: rgb(120, 120, 120);
+}
+header .services a.headertext:hover:after {
+  width: 100%;
+}
+header .services ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .services li {
+  list-style: none;
+}
+header .services li:hover .dropdown {
+  display: block;
+}
+header .services li a {
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+header .services .dropdown {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  display: none;
+}
+header .services .dropdown .owl-dots {
+  display: none;
+}
+header .services .dropdown h4 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+header .services .dropdown .categories ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+header .services .dropdown .categories ul li {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-family: Poppins, sans-serif;
+}
+header .services .dropdown .categories ul li a {
+  font-size: 1.1rem;
+  border: none;
+  transition: 0.1s;
+  color: rgb(26, 26, 26);
+}
+header .services .dropdown .categories ul li a:hover {
+  color: #f20089;
+}
+header .services .dropdown .event ul {
+  padding-left: 0px;
+}
+header .services .dropdown .event ul li {
+  width: 100%;
+  margin-top: 15px;
+}
+header .services .dropdown .event ul li a {
+  font-size: 1.1rem;
+  border: none;
+  transition: 0.1s;
+  color: rgb(26, 26, 26);
+}
+header .services .dropdown .event ul li a:hover {
+  color: #f20089;
+}
+header .services .dropdown .line {
+  background-color: rgb(209, 209, 209);
+  width: 2px;
+  height: 290px;
+}
+header .services .dropdown .photos .item {
+  overflow: hidden;
+  margin: 0 auto;
+}
+header .services .dropdown .photos .item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+header .services .dropdown .photos .item img:hover {
+  transform: scale(1.5);
+}
+header .identity {
+  width: 100%;
+}
+header .identity i {
+  color: black;
+}
+header .identity ul {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .identity ul li {
+  list-style: none;
+}
+header .identity ul li:hover .login {
+  position: absolute;
+  display: block;
+  transition-delay: 0s, 0s, 0.3s;
+}
+header .identity ul li a {
+  color: black;
+}
+header .identity span {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+  .services {
+    display: none;
+  }
+  .identity {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
