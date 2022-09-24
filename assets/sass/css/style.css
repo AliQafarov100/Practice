@@ -229,6 +229,216 @@ main #category .box .text p {
   color: black;
 }
 
+main #selected-palace .container .row .view-all a {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: black;
+  border: solid 1px #9a9a9a;
+  transition: .3s;
+  background-color: white;
+}
+
+main #selected-palace .container .row .view-all a:hover {
+  border: solid 1px #171717;
+}
+
+main #selected-palace .container .row h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+}
+
+main #selected-palace .container .row .box {
+  padding-bottom: 25px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+  transition: .2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+main #selected-palace .container .row .box:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+}
+
+main #selected-palace .container .row .box .manage {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  z-index: 6;
+  width: 90%;
+  left: 10px;
+}
+
+main #selected-palace .container .row .box .manage i {
+  font-size: 20px;
+  color: #a28b8b;
+  transition: .4s;
+}
+
+main #selected-palace .container .row .box .manage i:hover {
+  color: white;
+  font-size: 30px;
+}
+
+main #selected-palace .container .row .box .swip {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+main #selected-palace .container .row .box .swipers {
+  transition: all ease 1s;
+  position: relative;
+  left: 0;
+}
+
+main #selected-palace .container .row .box .swiper-slide:hover manage {
+  display: block;
+}
+
+main #selected-palace .container .row .box .swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+main #selected-palace .container .row .box h4 {
+  margin-top: 10px;
+}
+
+main #selected-palace .container .row .box h4 a {
+  text-decoration: none;
+  color: #242424;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+main #selected-palace .container .row .box .price-food img {
+  width: 6%;
+  border-radius: 0px;
+}
+
+main #selected-palace .container .row .box .price-food span {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+main #selected-palace .container .row .box .location {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  color: #3e3e3e;
+}
+
+main #vip-palace .container .row .view-all a {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: black;
+  border: solid 1px #9a9a9a;
+  transition: .3s;
+  background-color: white;
+}
+
+main #vip-palace .container .row .view-all a:hover {
+  border: solid 1px #171717;
+}
+
+main #vip-palace .container .row h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+}
+
+main #vip-palace .container .row .box {
+  padding-bottom: 25px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+  transition: .2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+main #vip-palace .container .row .box:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+}
+
+main #vip-palace .container .row .box .manage {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  z-index: 6;
+  width: 90%;
+  left: 10px;
+}
+
+main #vip-palace .container .row .box .manage i {
+  font-size: 20px;
+  color: #a28b8b;
+  transition: .4s;
+}
+
+main #vip-palace .container .row .box .manage i:hover {
+  color: white;
+  font-size: 30px;
+}
+
+main #vip-palace .container .row .box .swip {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+main #vip-palace .container .row .box .swipers {
+  transition: all ease 1s;
+  position: relative;
+  left: 0;
+}
+
+main #vip-palace .container .row .box .swiper-slide:hover manage {
+  display: block;
+}
+
+main #vip-palace .container .row .box .swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+main #vip-palace .container .row .box h4 {
+  margin-top: 10px;
+}
+
+main #vip-palace .container .row .box h4 a {
+  text-decoration: none;
+  color: #242424;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+main #vip-palace .container .row .box .price-food img {
+  width: 6%;
+  border-radius: 0px;
+}
+
+main #vip-palace .container .row .box .price-food span {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+main #vip-palace .container .row .box .location {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  color: #3e3e3e;
+}
+
 @media only screen and (max-width: 1200px) {
   .big-box {
     display: flex;
