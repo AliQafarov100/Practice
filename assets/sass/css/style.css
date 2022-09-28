@@ -439,6 +439,59 @@ main #vip-palace .container .row .box .location {
   color: #3e3e3e;
 }
 
+#data-section h4 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#data-section ul {
+  display: flex;
+  gap: 15px;
+  padding-left: 0px;
+}
+
+#data-section ul li {
+  list-style: none;
+}
+
+#data-section ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#data-section ul li a::before {
+  content: ".";
+  position: relative;
+  bottom: 4px;
+  right: 7px;
+}
+
+#data-section .details-restaurants {
+  gap: 10px;
+}
+
+#data-section .details-restaurants .rezerv {
+  background-color: #cf147e;
+  border-radius: 5px;
+  width: 150px;
+  height: 45px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#data-section .details-restaurants .rezerv:hover {
+  background-color: #850c51;
+}
+
+#data-section .details-restaurants ul {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
 @media only screen and (max-width: 1200px) {
   .big-box {
     display: flex;
@@ -460,6 +513,23 @@ main #vip-palace .container .row .box .location {
   }
   .big-box .photos {
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #reserv-slider-section .swip {
+    width: 100%;
+    height: 400px;
+  }
+  #reserv-slider-section .swip .swiper-slide {
+    width: 80%;
+  }
+  #reserv-slider-section .swip .swiper-slide img {
+    width: 99.5%;
+    height: 400px;
+  }
+  #reserv-slider-section .swip .manage-slide {
+    top: 200px;
   }
 }
 
@@ -486,6 +556,99 @@ main #vip-palace .container .row .box .location {
   .big-box .photos {
     width: 50%;
   }
+  #reserv-slider-section .swip {
+    width: 90%;
+    height: 250px;
+  }
+  #reserv-slider-section .swip .swiper-slide {
+    width: 70%;
+  }
+  #reserv-slider-section .swip .swiper-slide img {
+    width: 99.5%;
+    height: 250px;
+  }
+  #reserv-slider-section .swip .manage-slide {
+    top: 125px;
+  }
+}
+
+#reserv-slider-section .swip {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+#reserv-slider-section .swip .swipers {
+  transition: all ease 1s;
+  position: relative;
+  left: 0;
+}
+
+#reserv-slider-section .manage-slide {
+  width: 95%;
+  display: flex;
+  left: 20px;
+  justify-content: space-between;
+  position: absolute;
+}
+
+#reserv-slider-section .manage-slide i {
+  font-size: 30px;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#reserv-slider-section .manage-slide i:hover {
+  font-size: 35px;
+}
+
+#reserv-slider-section .reserve-detail {
+  width: 100%;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+  border-radius: 10px;
+}
+
+#reserv-slider-section .reserve-detail .reserv-form {
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#reserv-slider-section .reserve-detail .reserv-form input {
+  display: inline-block;
+  width: 85%;
+  height: 30px;
+  border: none;
+}
+
+#reserv-slider-section .reserve-detail .reserv-form i {
+  color: gray;
+}
+
+#reserv-slider-section .reserve-detail .forms {
+  background-color: #cf147e;
+  width: 80%;
+  height: 50px;
+  margin: 15px auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reserv-slider-section .reserve-detail .forms a {
+  color: white;
+  font-family: Poppins, sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -498,6 +661,26 @@ main #vip-palace .container .row .box .location {
   .big-box .box {
     margin-top: 10px;
     width: 49%;
+  }
+  .swip {
+    width: 90%;
+    height: 250px;
+  }
+  .swip .swiper-slide {
+    width: 70%;
+  }
+  .swip .swiper-slide img {
+    width: 99.5%;
+    height: 250px;
+  }
+  .swip .manage-slide {
+    top: 125px;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  #data-section {
+    display: none;
   }
 }
 

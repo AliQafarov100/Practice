@@ -315,14 +315,14 @@ main {
                         overflow: hidden;
                     }
 
-                    .swipers {   
+                    .swipers {
                         transition: all ease 1s;
                         position: relative;
                         left: 0;
                     }
 
                     .swiper-slide {
-                       
+
                         &:hover {
                             manage {
                                 display: block;
@@ -372,7 +372,8 @@ main {
             }
         }
     }
-    #vip-palace{
+
+    #vip-palace {
         .container {
             .row {
                 .view-all {
@@ -438,14 +439,14 @@ main {
                         overflow: hidden;
                     }
 
-                    .swipers {   
+                    .swipers {
                         transition: all ease 1s;
                         position: relative;
                         left: 0;
                     }
 
                     .swiper-slide {
-                       
+
                         &:hover {
                             manage {
                                 display: block;
@@ -497,6 +498,63 @@ main {
     }
 }
 
+#data-section {
+    h4 {
+        font-family: Poppins, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        gap: 15px;
+        padding-left: 0px;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &::before {
+                    content: ".";
+                    position: relative;
+                    bottom: 4px;
+                    right: 7px;
+                }
+            }
+
+        }
+    }
+
+    .details-restaurants {
+        gap: 10px;
+
+        .rezerv {
+            background-color: #cf147e;
+            border-radius: 5px;
+            width: 150px;
+            height: 45px;
+            font-family: Poppins, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: #850c51;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            height: 45px;
+        }
+
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .big-box {
         display: flex;
@@ -520,6 +578,28 @@ main {
 
         .photos {
             width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #reserv-slider-section {
+        .swip {
+            width: 100%;
+            height: 400px;
+
+            .swiper-slide {
+                width: 80%;
+
+                img {
+                    width: 99.5%;
+                    height: 400px;
+                }
+            }
+
+            .manage-slide {
+                top: 200px;
+            }
         }
     }
 }
@@ -552,6 +632,114 @@ main {
             width: 50%;
         }
     }
+
+    #reserv-slider-section {
+        .swip {
+            width: 90%;
+            height: 250px;
+
+            .swiper-slide {
+                width: 70%;
+
+                img {
+                    width: 99.5%;
+                    height: 250px;
+                }
+            }
+
+            .manage-slide {
+                top: 125px;
+            }
+        }
+    }
+
+
+}
+
+#reserv-slider-section {
+    .swip {
+
+        overflow: hidden;
+        border-radius: 10px;
+
+        position: relative;
+
+        .swipers {
+
+            transition: all ease 1s;
+            position: relative;
+            left: 0;
+        }
+    }
+
+    .manage-slide {
+        width: 95%;
+        display: flex;
+        left: 20px;
+        justify-content: space-between;
+        position: absolute;
+
+        i {
+            font-size: 30px;
+            color: white;
+            transition: .5s;
+            cursor: pointer;
+            z-index: 100;
+
+
+            &:hover {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .reserve-detail {
+        width: 100%;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 5px;
+        border-radius: 10px;
+
+        .reserv-form {
+            width: 80%;
+            height: 50px;
+            background-color: white;
+            margin: 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 5px;
+
+            input {
+                display: inline-block;
+                width: 85%;
+                height: 30px;
+                border: none;
+            }
+
+            i {
+                color: gray;
+            }
+        }
+
+        .forms {
+            background-color: #cf147e;
+            width: 80%;
+            height: 50px;
+            margin: 15px auto;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                color: white;
+                font-family: Poppins, sans-serif;
+
+            }
+        }
+    }
 }
 
 @media only screen and(max-width: 768px) {
@@ -566,6 +754,30 @@ main {
             margin-top: 10px;
             width: 49%;
         }
+    }
+
+    .swip {
+        width: 90%;
+        height: 250px;
+
+        .swiper-slide {
+            width: 70%;
+
+            img {
+                width: 99.5%;
+                height: 250px;
+            }
+        }
+
+        .manage-slide {
+            top: 125px;
+        }
+    }
+}
+
+@media only screen and(max-width: 524px) {
+    #data-section {
+        display: none;
     }
 }
 
