@@ -54,4 +54,4 @@ prev.addEventListener("click", function () {
 function rollSlider() {
   swiper.style.transform = 'translate(-' + count * width + 'px)';
 }
-
+AOS.init();

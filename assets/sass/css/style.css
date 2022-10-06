@@ -128,6 +128,31 @@ header .identity span {
   font-weight: 400;
 }
 
+.responsive-rezerv {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+}
+
+.responsive-rezerv .rezerv {
+  background-color: #cf147e;
+  border-radius: 5px;
+  width: 90%;
+  height: 45px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-rezerv .rezerv:hover {
+  background-color: #850c51;
+}
+
 #footer-section {
   width: 100%;
   background-color: #D0D3D4;
@@ -471,25 +496,56 @@ main #vip-palace .container .row .box .location {
   gap: 10px;
 }
 
-#data-section .details-restaurants .rezerv {
-  background-color: #cf147e;
+#data-section .details-restaurants .modal-content .modal-reserv {
+  padding: 10px;
+}
+
+#data-section .details-restaurants .modal-content .reserve-detail-modal {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+  border-radius: 10px;
+}
+
+#data-section .details-restaurants .modal-content .reserve-detail-modal .reserv-form-modal .form-reserv {
+  height: 50px;
+  background-color: white;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 10px;
   border-radius: 5px;
-  width: 150px;
-  height: 45px;
-  font-family: Poppins, sans-serif;
+}
+
+#data-section .details-restaurants .modal-content .reserve-detail-modal .reserv-form-modal .form-reserv input {
+  display: inline-block;
+  width: 85%;
+  height: 30px;
+  border: none;
+}
+
+#data-section .details-restaurants .modal-content .reserve-detail-modal .reserv-form-modal .form-reserv input:focus {
+  outline: none;
+}
+
+#data-section .details-restaurants .modal-content .reserve-detail-modal .reserv-form-modal .form-reserv i {
+  color: gray;
+}
+
+#data-section .details-restaurants .modal-content .reserve-detail-modal .forms {
+  background-color: #04befe;
+  height: 50px;
+  margin: 15px auto;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#data-section .details-restaurants .rezerv:hover {
-  background-color: #850c51;
-}
-
-#data-section .details-restaurants ul {
-  display: flex;
-  align-items: center;
-  height: 45px;
+#data-section .details-restaurants .modal-content .reserve-detail-modal .forms a {
+  color: white;
+  font-family: Poppins, sans-serif;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -519,17 +575,20 @@ main #vip-palace .container .row .box .location {
 @media only screen and (min-width: 992px) {
   #reserv-slider-section .swip {
     width: 100%;
-    height: 400px;
+    height: 500px;
   }
   #reserv-slider-section .swip .swiper-slide {
     width: 80%;
   }
   #reserv-slider-section .swip .swiper-slide img {
-    width: 99.5%;
-    height: 400px;
+    width: 100%;
+    height: 500px;
   }
   #reserv-slider-section .swip .manage-slide {
-    top: 200px;
+    top: 250px;
+  }
+  .responsive-rezerv {
+    display: none;
   }
 }
 
@@ -557,24 +616,22 @@ main #vip-palace .container .row .box .location {
     width: 50%;
   }
   #reserv-slider-section .swip {
-    width: 90%;
-    height: 250px;
+    width: 100%;
+    height: 200px;
   }
   #reserv-slider-section .swip .swiper-slide {
     width: 70%;
   }
   #reserv-slider-section .swip .swiper-slide img {
     width: 99.5%;
-    height: 250px;
   }
-  #reserv-slider-section .swip .manage-slide {
-    top: 125px;
+  .reserv-box {
+    display: none;
   }
 }
 
 #reserv-slider-section .swip {
   overflow: hidden;
-  border-radius: 10px;
   position: relative;
 }
 
@@ -604,14 +661,20 @@ main #vip-palace .container .row .box .location {
   font-size: 35px;
 }
 
-#reserv-slider-section .reserve-detail {
+#reserv-slider-section .reserv-box {
+  position: sticky;
+  right: 0px;
+  top: 20px;
+}
+
+#reserv-slider-section .reserv-box .reserve-detail {
   width: 100%;
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
   border-radius: 10px;
 }
 
-#reserv-slider-section .reserve-detail .reserv-form {
+#reserv-slider-section .reserv-box .reserve-detail .reserv-form {
   width: 80%;
   height: 50px;
   background-color: white;
@@ -624,18 +687,22 @@ main #vip-palace .container .row .box .location {
   border-radius: 5px;
 }
 
-#reserv-slider-section .reserve-detail .reserv-form input {
+#reserv-slider-section .reserv-box .reserve-detail .reserv-form input {
   display: inline-block;
   width: 85%;
   height: 30px;
   border: none;
 }
 
-#reserv-slider-section .reserve-detail .reserv-form i {
+#reserv-slider-section .reserv-box .reserve-detail .reserv-form input:focus {
+  outline: none;
+}
+
+#reserv-slider-section .reserv-box .reserve-detail .reserv-form i {
   color: gray;
 }
 
-#reserv-slider-section .reserve-detail .forms {
+#reserv-slider-section .reserv-box .reserve-detail .forms {
   background-color: #cf147e;
   width: 80%;
   height: 50px;
@@ -646,9 +713,29 @@ main #vip-palace .container .row .box .location {
   justify-content: center;
 }
 
-#reserv-slider-section .reserve-detail .forms a {
+#reserv-slider-section .reserv-box .reserve-detail .forms a {
   color: white;
   font-family: Poppins, sans-serif;
+}
+
+#reserv-slider-section .image-box {
+  display: flex;
+}
+
+#reserv-slider-section .image-box .another-img {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#reserv-slider-section .image-box .another-img img {
+  width: 100%;
+  height: 85px;
+  cursor: pointer;
+  transition: .5s all ease-in-out;
+}
+
+#reserv-slider-section .image-box .another-img img:hover {
+  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 768px) {
@@ -662,25 +749,52 @@ main #vip-palace .container .row .box .location {
     margin-top: 10px;
     width: 49%;
   }
-  .swip {
-    width: 90%;
-    height: 250px;
+}
+
+@media only screen and (min-width: 524px) {
+  .details-restaurants {
+    display: flex;
   }
-  .swip .swiper-slide {
-    width: 70%;
+  .details-restaurants .rezerv {
+    background-color: #cf147e;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .swip .swiper-slide img {
-    width: 99.5%;
-    height: 250px;
+  .details-restaurants .rezerv:hover {
+    background-color: #850c51;
   }
-  .swip .manage-slide {
-    top: 125px;
+  .details-restaurants ul {
+    display: flex;
+    align-items: center;
+    height: 45px;
   }
 }
 
 @media only screen and (max-width: 524px) {
-  #data-section {
+  .details-address {
     display: none;
+  }
+  .details-restaurants .rezerv {
+    display: none;
+  }
+  .details-restaurants ul {
+    flex-direction: column;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .image-box {
+    justify-content: space-between;
+  }
+  .manage-slide {
+    top: 90px;
+    left: 5px;
   }
 }
 
